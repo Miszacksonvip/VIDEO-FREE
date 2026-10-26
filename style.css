@@ -675,4 +675,84 @@ footer
   }
 }
 
+/* Perbaikan layar HP - desain asli tetap dipertahankan */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    width: calc(100% - 24px);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav {
+    width: 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .brand {
+    min-width: 0;
+    max-width: 100%;
+    flex-shrink: 1;
+  }
+
+  .search {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .player-card,
+  .player,
+  .video-info,
+  .ad-box {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .player {
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+
+  .telegram-button {
+    display: inline-flex;
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .grid > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
 
