@@ -256,11 +256,15 @@ main
   font-size:.78rem;
   color:var(--muted)
 }
-.download
-{
-  flex-shrink:0;
-  background:var(--green);
-  color:#061007;
+.download {
+  background: #69d8ff;
+  color: #061722;
+  text-decoration: none;
+}
+
+.download:hover {
+  background: #8be2ff;
+}
   border:0;
   border-radius:10px;
   padding:10px 14px;
