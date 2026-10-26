@@ -668,14 +668,4 @@ footer
   }
 }
 
-/* Posisi tombol JOIN TELEGRAM */
-.telegram-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background: #69d8ff;
-  color: #061722;
-  text-decoration: none;
-}
+
